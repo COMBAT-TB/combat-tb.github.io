@@ -1,0 +1,36 @@
+# Site settings
+title: combatTB
+description: > # Description of project
+# url: "http://www.combattb.org"
+url: "https://pvanheus.github.io/combat-tb/"
+baseurl: "/combat-tb"
+logo: ""
+paginate: 3
+paginate_path: "/page:num/"
+owner:
+    email: combattb@gmail.com
+    facebook:
+        show: false
+        username: ""
+    github:
+        show: false
+        username: ""
+    twitter:
+        show: false
+        username: ""
+    disqus:
+        show: false
+        username: ""
+    linkedin:
+        show: false
+        username: ""
+sass:
+    sass_dir: _sass
+    style: compressed
+permalink: /:title/
+markdown: kramdown
+highlighter: rouge
+plugins:
+    - jekyll-feed
+    - jekyll-paginate
+include: ['_pages']

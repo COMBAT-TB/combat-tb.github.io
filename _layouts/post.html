@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+
+<div class="container">
+    <div class="section">
+        <div class="row">
+            <div class="col s12">
+                <div class="white card-no-shadow">
+                    <div class="card-content">
+                        <div class="card-title center-align"><h4 class="bolder blue-text text-darken-2">{{ page.title }}</h4></div>
+                        <h5 class="grey-text text-darken-1">Published on {{ page.date | date: "%B %-d, %Y" }}</h5>
+                        <br/>
+                        <div class="divider"></div>
+                        <!-- <article class="post-categories center-align">
+                            <div class="chip blue blue-darken-2 white-text">Categories</div>
+                            {% for cat in page.categories %}<div class="chip">{{ cat }}</div> {% endfor %}
+                        </article> -->
+                        <article class="grey-text text-darken-2 post-content" style="font-size:1.1em!important;">
+                            {{ content }}
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
