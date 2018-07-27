@@ -1,267 +1,537 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-    <title>combatTB</title>
-    <meta name="description" content="">
-    <link type="application/atom+xml" rel="alternate" href="https://combat-tb.github.io/feed.xml" title="combatTB" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="/assets/css/Material-icons.css" media="screen,projection">
-    <link type="text/css" rel="stylesheet" href="/assets/css/app.css" media="screen,projection">
-    <link rel="canonical" href="https://combat-tb.github.io/">
+<html lang="en">
 
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<title>combatTB</title>
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+
+	<!-- Owl Carousel -->
+	<link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
+	<link type="text/css" rel="stylesheet" href="css/owl.theme.default.css" />
+
+	<!-- Magnific Popup -->
+	<link type="text/css" rel="stylesheet" href="css/magnific-popup.css" />
+
+	<!-- Font Awesome Icon -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
 </head>
 
 <body>
-    <header>
-        <div id="topnav">
+	<!-- Header -->
+	<header id="home">
+		<!-- Background Image -->
+		<div class="bg-img" style="background-image: url('./img/ctbbackground.jpg');">
+			<div class="overlay"></div>
+		</div>
+		<!-- /Background Image -->
 
-	<!-- dropdown menus  -->
-		<!-- About  -->
-		<ul id="dropdown-about" class="dropdown-content">
-			<li><a href="/about">About COMBAT-TB</a></li>
-		  <li><a href="/team">Team</a></li>
-		  <li><a href="/publications">Publications</a></li>
-			<li><a href="/events">Events</a></li>
-		  <li><a href="/othersources">Other data sources</a></li>
-		</ul>
-	<!-- Use  -->
-	<ul id="dropdown-use" class="dropdown-content">
-	  <li><a href="http://explorer.combattb.org">COMBAT TB Explorer</a></li>
-	  <!-- <li><a href="http://ctbgx.sanbi.ac.za">COMBAT TB Analysis Server</a></li> -->
-	</ul>
+		<!-- Nav -->
+		<nav id="nav" class="navbar nav-transparent">
+			<div class="container">
 
-	<!-- Education  -->
-	<ul id="dropdown-edu" class="dropdown-content">
-		<li><a href="/explorer-guide">Guide to using Explorer</a></li>
-	  <!-- <li><a href="/galaxy-guide">Galaxy tutorials/tours for ctbgx workflow</a></li> -->
-		<!-- <li><a href="/videos">Video tutorials</a></li> -->
-	</ul>
+				<div class="navbar-header">
+					<!-- Logo -->
+					<div class="navbar-brand">
+						<a href="index.html">
+							<img class="logo" src="img/ctb-logo.png" alt="logo">
+							<img class="logo-alt" src="img/ctb-logo-alt.png" alt="logo">
+						</a>
+					</div>
+					<!-- /Logo -->
 
-	<!-- main menu  -->
-	<nav class="">
-	  <div class="nav-wrapper container">
-	    <a href="/combat-tb" class="brand-logo"><img src="/assets/img/logo.png" height="80px" /></a>
-			<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+					<!-- Collapse nav button -->
+					<div class="nav-collapse">
+						<span></span>
+					</div>
+					<!-- /Collapse nav button -->
+				</div>
 
-	    <ul class="right hide-on-med-and-down">
-	      <li><a class="dropdown-button" href="#!" data-activates="dropdown-about">About<i class="material-icons right">arrow_drop_down</i></a></li>
-				<li><a class="dropdown-button" href="#!" data-activates="dropdown-use"><span style="font-weight: 600; font-size: 1.1em;">Tools</span><i class="material-icons right">arrow_drop_down</i></a></li>
-				<li><a class="dropdown-button" href="#!" data-activates="dropdown-edu">Education<i class="material-icons right">arrow_drop_down</i></a></li>
-				<li><a href="/contribute">Deploy &amp; Develop</a></li>
-	    </ul>
+				<!--  Main navigation  -->
+				<ul class="main-nav nav navbar-nav navbar-right">
+					<li>
+						<a href="#home">Home</a>
+					</li>
+					<li>
+						<a href="#services">Services</a>
+					</li>
+					<li>
+						<a href="#about">About</a>
+					</li>
+					<!-- <li>
+						<a href="#news">News</a>
+					</li> -->
+					<li>
+						<a href="#team">Team</a>
+					</li>
+					<li>
+						<a href="#funders">Funders</a>
+					</li>
+					<li>
+						<a href="#contact">Contact</a>
+					</li>
+					<li>
+						<a href="/publications.html">Publications</a>
+					</li>
+				</ul>
+				<!-- /Main navigation -->
 
-			<!-- mobile menu  -->
-			<ul class="side-nav" id="mobile-demo">
-				<li><a  href="#">About</a>
-					<ul id="dropdown-about" class="dropdown-content">
-						<li><a href="/about">About COMBAT-TB</a></li>
-					  <li><a href="/community/team">Team</a></li>
-					  <li><a href="/community/publications">Publications</a></li>
-						<li><a href="/community/events">Events</a></li>
-					  <li><a href="/community/data-sources">Other data sources</a></li>
+			</div>
+		</nav>
+		<!-- /Nav -->
+
+		<!-- home wrapper -->
+		<div class="home-wrapper">
+			<div class="container">
+				<div class="row">
+
+					<!-- home content -->
+					<div class="col-md-10 col-md-offset-1">
+						<div class="home-content">
+							<h1 class="white-text">Computational Bacterial Analytical ToolKit for Tuberculosis</h1>
+							<p class="white-text">Addressing the needs faced by researchers in the context of M.
+								<em>tuberculosis</em>.
+							</p>
+							<a href="https://github.com/COMBAT-TB" class="white-btn">
+								<i class="fa fa-github"></i> On GitHub</a>
+							<a href="https://github.com/COMBAT-TB" class="main-btn">
+								<i class="fa fa-book"></i> Learn More</a>
+						</div>
+					</div>
+					<!-- /home content -->
+
+				</div>
+			</div>
+		</div>
+		<!-- /home wrapper -->
+
+	</header>
+	<!-- /Header -->
+
+	<!-- Services -->
+	<div id="services" class="section md-padding">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- Section header -->
+				<div class="section-header text-center">
+					<h2 class="title">Services</h2>
+				</div>
+				<!-- /Section header -->
+
+				<!-- about -->
+				<div class="col-md-4">
+					<div class="about">
+						<i class="fa fa-search"></i>
+						<h3>combatTB Explorer</h3>
+						<p>A comprehensive resource for M.
+							<em>tuberculosis</em> genome, proteome and biochemical pathway knowledge.</p>
+						<a href="http://combattb.sanbi.ac.za/">Read more</a>
+					</div>
+				</div>
+				<!-- /about -->
+
+				<!-- about -->
+				<div class="col-md-4">
+					<div class="about">
+						<i class="fa fa-database"></i>
+						<h3>combatTB NeoDB</h3>
+						<p>An M.
+							<em>tuberculosis</em> annotation Graph database used to represent interrelated knowledge and perform analysis.</p>
+						<a href="https://github.com/COMBAT-TB/neo4j_db">Read more</a>
+					</div>
+				</div>
+				<!-- /about -->
+
+				<!-- about -->
+				<div class="col-md-4">
+					<div class="about">
+						<i class="fa fa-cogs"></i>
+						<h3>combatTB Workbench</h3>
+						<p>A customizable platform for variant discovery and annotation, phylogeny construction and variant prioritisation.
+						</p>
+						<a href="#">Comming Soon</a>
+					</div>
+				</div>
+				<!-- /about -->
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+	</div>
+	<!-- /Services -->
+
+	<!-- About -->
+	<div id="about" class="section md-padding bg-grey">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- About content -->
+				<div class="col-md-6">
+					<div class="section-header">
+						<h2 class="title">COMBAT-TB</h2>
+					</div>
+					<p>
+						<abbr title="Computational Bacterial Analytical ToolKit for Tuberculosis">COMBAT-TB</abbr> is a
+						<abbr title="South African Medical Research Council">SAMRC</abbr> and
+						<abbr title="National Research Foundation">NRF</abbr> funded project undertaken by researchers and software developers at
+						<abbr title="South African National Bioinformatics Institute">SANBI</abbr> that provides tools for understanding M.
+						<em>tuberculosis</em>. Our focus is on two related initiatives:</p>
+					<div class="feature">
+						<i class="fa fa-check"></i>
+						<p>COMBAT-TB eXplorer, a comprehensive knowledgebase of the M.
+							<em>tuberculosis</em> genome and associated information.</p>
+					</div>
+					<div class="feature">
+						<i class="fa fa-check"></i>
+						<p>COMBAT-TB Workbench, a set of tools and workflows for M.
+							<em>tuberculosis</em> sequence data analysis. </p>
+					</div>
+					<p>We practice open science and open source software development.</p>
+				</div>
+				<!-- /About content -->
+
+				<!-- About slider -->
+				<div class="col-md-6">
+					<div id="about-slider" class="owl-carousel owl-theme">
+						<img class="img-responsive" src="/img/ctbx.png" alt="combatTB-X">
+						<img class="img-responsive" src="/img/phylo.jpg" alt="pipeline">
+						<img class="img-responsive" src="/img/fullworkflowview.png" alt="workflows">
+						<img class="img-responsive" src="/img/ie01.png" alt="IE">
+						<img class="img-responsive" src="/img/pipelinerun.png" alt="pipeline">
+						<img class="img-responsive" src="/img/katg.png" alt="katg">
+						<img class="img-responsive" src="/img/zworkflow.png" alt="workflows">
+					</div>
+				</div>
+				<!-- /About slider -->
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /About -->
+
+	<!-- Team -->
+	<div id="team" class="section md-padding">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- Section header -->
+				<div class="section-header text-center">
+					<h2 class="title">The Team</h2>
+				</div>
+				<!-- /Section header -->
+
+				<!-- team -->
+				<div class="col-sm-12">
+					<div class="team">
+						<div class="team-img">
+							<img class="img-responsive" src="/img/ctb-team-2018.jpg" alt="">
+							<div class="overlay">
+								<div class="team-social">
+									<a href="https://github.com/COMBAT-TB">
+										<i class="fa fa-github"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="team-content">
+							<h3>COMBAT-TB Team</h3>
+							<span>2018</span>
+						</div>
+					</div>
+				</div>
+				<!-- /team -->
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /Team -->
+
+	<!-- Funders -->
+	<div id="funders" class="section md-padding bg-grey">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- Section header -->
+				<div class="section-header text-center">
+					<h2 class="title">Funders</h2>
+				</div>
+				<!-- /Section header -->
+
+				<!-- Work -->
+				<div class="col-md-3 col-xs-6 work">
+					<img class="img-responsive" src="./img/SANBI.png" alt="">
+					<div class="overlay"></div>
+					<div class="work-content">
+						<!-- <span>SANBI</span> -->
+						<h3>SANBI</h3>
+						<div class="work-link">
+							<a href="https://www.sanbi.ac.za/">
+								<i class="fa fa-external-link"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- /Work -->
+
+				<!-- Work -->
+				<div class="col-md-3 col-xs-6 work">
+					<img class="img-responsive" src="./img/SAMRC.png" alt="">
+					<div class="overlay"></div>
+					<div class="work-content">
+						<!-- <span>SAMRC</span> -->
+						<h3>SAMRC</h3>
+						<div class="work-link">
+							<a href="http://www.mrc.ac.za/">
+								<i class="fa fa-external-link"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- /Work -->
+
+				<!-- Work -->
+				<div class="col-md-3 col-xs-6 work">
+					<img class="img-responsive" src="./img/NRF3.png" alt="">
+					<div class="overlay"></div>
+					<div class="work-content">
+						<!-- <span>NRF</span> -->
+						<h3>NRF</h3>
+						<div class="work-link">
+							<a href="http://www.nrf.ac.za/">
+								<i class="fa fa-external-link"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- /Work -->
+
+				<!-- Work -->
+				<div class="col-md-3 col-xs-6 work">
+					<img class="img-responsive" src="./img/UWC_.png" alt="">
+					<div class="overlay"></div>
+					<div class="work-content">
+						<!-- <span>UWC</span> -->
+						<h3>UWC</h3>
+						<div class="work-link">
+							<a href="https://www.uwc.ac.za/">
+								<i class="fa fa-external-link"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- /Work -->
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /Funders -->
+
+	<!-- Contact -->
+	<div id="contact" class="section md-padding">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- Section-header -->
+				<div class="section-header text-center">
+					<h2 class="title">Get in touch</h2>
+				</div>
+				<!-- /Section-header -->
+
+				<!-- contact -->
+				<div class="col-sm-4">
+					<div class="contact">
+						<i class="fa fa-phone"></i>
+						<h3>Phone</h3>
+						<p>+27 21 959-3645 </p>
+					</div>
+				</div>
+				<!-- /contact -->
+
+				<!-- contact -->
+				<div class="col-sm-4">
+					<div class="contact">
+						<i class="fa fa-envelope"></i>
+						<h3>Email</h3>
+						<p>
+							<a href="mailto:combat-tb-help@sanbi.ac.za">combat-tb-help@sanbi.ac.za</a>
+						</p>
+					</div>
+				</div>
+				<!-- /contact -->
+
+				<!-- contact -->
+				<div class="col-sm-4">
+					<div class="contact">
+						<i class="fa fa-map-marker"></i>
+						<h3>Address</h3>
+						<address>South African National Bioinformatics Institute
+							<br> University of the Western Cape
+							<br> Robert Sobukwe Road
+							<br> Bellville, 7535
+							<br>South Africa
+						</address>
+					</div>
+				</div>
+				<!-- /contact -->
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /Contact -->
+
+	<!-- Footer -->
+	<footer id="footer" class="sm-padding bg-dark">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<div class="col-md-12">
+
+					<!-- footer logo -->
+					<div class="footer-logo">
+						<a href="index.html">
+							<img src="img/ctblogo-alt.png" alt="logo">
+						</a>
+					</div>
+					<!-- /footer logo -->
+
+					<!-- footer follow -->
+					<ul class="footer-follow">
+						<li>
+							<a href="https://github.com/COMBAT-TB">
+								<i class="fa fa-github"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-twitter"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-youtube"></i>
+							</a>
+						</li>
 					</ul>
-				</li>
-				<li><a  href="#"><span style="font-weight: 600;">Tools</span></a>
-					<ul id="dropdown-use" class="dropdown-content">
-						<li><a href="http://combattb.sanbi.ac.za">COMBAT TB Explorer/Encyclopedia</a></li>
-					  <li><a href="http://ctbgx.sanbi.ac.za">COMBAT TB Analysis Server</a></li>
-					</ul>
-				</li>
-				<li><a  href="#">Education</a>
-					<ul id="dropdown-edu" class="dropdown-content">
-						<li><a href="/community/team">Guide to using Explorer</a></li>
-					  <li><a href="/community/publications">Galaxy tutorials/tours for ctbgx workflow</a></li>
-						<li><a href="/community/events">Video tutorials</a></li>
-					</ul>
-				</li>
-				<li><a href="/contribute">Deploy &amp; Develop</a></li>
-      </ul>
-	  </div>
-	</nav>
-</div>
+					<!-- /footer follow -->
 
-    </header>
-    <main>
-        <br /><br />
-          <div class="carousel-outer container-fluid container-large">
-	  <div class="carousel z-depth-2 carousel-slider center" data-indicators="true">
+					<!-- footer copyright -->
+					<div class="footer-copyright">
+						<p>Copyright ©
+							<script>
+								document.write(new Date().getFullYear())
+							</script>. All Rights Reserved.
+						</p>
+					</div>
+					<!-- /footer copyright -->
 
-      
-        <div class="carousel-item black-text" style="background-color:#0; background-image: url('/assets/img/3.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat" href="#one!">
-    		  <h2 class="center-align white-text">Phylogeny image</h2>
-    		  <p class="w">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quae cum dixisset paulumque institisset, Quid est? Immo videri fortasse. Quid iudicant sensus? Duo Reges: constructio interrete. A quibus propter discendi cupiditatem videmus ultimas terras esse peragratas. Non est ista, inquam, Piso, magna dissensio.
+				</div>
 
-</p>
-          <div class="carousel-fixed-item center">
-      		  <a href="alink3" class="btn waves-effect blue blue-darken-2 white-text">read more</a>
-      		</div>
+			</div>
+			<!-- /Row -->
 
-    		</div>
-  		
-        <div class="carousel-item black-text" style="background-color:#0; background-image: url('/assets/img/2.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat" href="#one!">
-    		  <h2 class="center-align white-text">Screenshot of Galaxy analysis page</h2>
-    		  <p class="w">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quae cum dixisset paulumque institisset, Quid est? Immo videri fortasse. Quid iudicant sensus? Duo Reges: constructio interrete. A quibus propter discendi cupiditatem videmus ultimas terras esse peragratas. Non est ista, inquam, Piso, magna dissensio.
+		</div>
+		<!-- /Container -->
 
-</p>
-          <div class="carousel-fixed-item center">
-      		  <a href="alink2" class="btn waves-effect blue blue-darken-2 white-text">read more</a>
-      		</div>
+	</footer>
+	<!-- /Footer -->
 
-    		</div>
-  		
-        <div class="carousel-item black-text" style="background-color:#0; background-image: url('/assets/img/1.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat" href="#one!">
-    		  <h2 class="center-align white-text">Screenshot of COMBAT TB Explorer with JBrowse genome browser</h2>
-    		  <p class="w">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quae cum dixisset paulumque institisset, Quid est? Immo videri fortasse. Quid iudicant sensus? Duo Reges: constructio interrete. A quibus propter discendi cupiditatem videmus ultimas terras esse peragratas. Non est ista, inquam, Piso, magna dissensio.
+	<!-- Back to top -->
+	<div id="back-to-top"></div>
+	<!-- /Back to top -->
 
-</p>
-          <div class="carousel-fixed-item center">
-      		  <a href="alink" class="btn waves-effect blue blue-darken-2 white-text">read more</a>
-      		</div>
+	<!-- Preloader -->
+	<div id="preloader">
+		<div class="preloader">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<!-- /Preloader -->
 
-    		</div>
-  		
+	<!-- jQuery Plugins -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 
-	  </div>
-  </div>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-67570323-6"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-67570323-6');
+	</script>
 
 
-<div class="main-content">
-
-
-  <div class="content-inner">
-    <div class="content-section">
-      <center>
-        <div class="section-inner">
-          <div class="row">
-            <div class="col s6">
-              <h4 class="blue-text"><i class="material-icons">search</i><a href="http://explorer.combattb.org">COMBAT TB Explorer</a></h4>
-                <p>The COMBAT TB Explorer is a comprehensive resource for <em>M. tuberculosis</em> genome, proteome and biochemical pathway knowledge.</p>
-            </div>
-            <div class="col s6">
-              <h4 class="green-text"><i class="material-icons">build</i>COMBATB TB Workbench</h4>
-              <p>The COMBAT TB Workbench is a forthcoming bioinformatics analysis workbench with tools for variant discovery and annotation, phylogeny construction
-                and clade-based variant prioritisation.</p>
-            </div>
-          </div>
-        </div>
-      </center>
-    </div>
-  </div>
-  <!-- <div class="content-inner">
-    <div class="highlights-section">
-        <div class="content-section">
-          <center>
-            <div class="section-inner">
-                <h3 class="black-text"><center>Highlights</center></h3>
-                
-                  <p class="dark-text"><a class="body-link" href="/ethiopia_drtb/">New findings on drug-resistant TB in Ethiopia - 2018-06-03 19:49:37 -0500</a></p>
-                
-                  <p class="dark-text"><a class="body-link" href="/discriminating_latent_active_tb/">Test holds promise to discreminate latent from active TB - 2018-05-31 19:49:37 -0500</a></p>
-                
-                  <p class="dark-text"><a class="body-link" href="/new_amr/">Tuberculosis: Pharmacists develop new substance to counteract antimicrobial resistance - 2018-05-23 19:49:37 -0500</a></p>
-                
-            </div>
-          </center>
-        </div>
-    </div> -->
-
-    <div class="news-section">
-      <div class="content-section">
-        <center>
-        <div class="section-inner">
-          <div class="row">
-              <div class="col s6">
-                  <h3 class="black-text"><center>News</center></h3>
-                    
-                      <p class="dark-text"><a class="body-link" href="/ethiopia_drtb/">New findings on drug-resistant TB in Ethiopia - 2018-06-03 19:49:37 -0500</a></p>
-                    
-                      <p class="dark-text"><a class="body-link" href="/discriminating_latent_active_tb/">Test holds promise to discreminate latent from active TB - 2018-05-31 19:49:37 -0500</a></p>
-                    
-                      <p class="dark-text"><a class="body-link" href="/new_amr/">Tuberculosis: Pharmacists develop new substance to counteract antimicrobial resistance - 2018-05-23 19:49:37 -0500</a></p>
-                    
-              </div>
-              <div class="col s6">
-                  <h3 class="black-text"><center>Events</center></h3>
-                  
-                      <p class="dark-text">Please check back later for updates</p>
-                  
-              </div>
-          </div>
-        </div>
-      </center>
-      </div>
-    </div>
-
-    <div class="supported-section">
-        <div class="content-section">
-          <center>
-          <div class="section-inner">
-            <h3 class="black-text"><center>Supported by</center></h3>
-            <div class="row">
-                <div class="col s6 m3">
-                    <img src="assets/img/SANBI_logo.svg">
-                </div>
-                <div class="col s6 m3">
-                    <img src="assets/img/SAMRC_Logo.svg">
-                </div>
-                <div class="col s6 m3">
-                    <img src="assets/img/UWC_Logo.svg">
-                </div>
-                <div class="col s6 m3">
-                    <img src="assets/img/NRF_Logo.svg">
-                </div>
-            </div>
-          </div>
-        </center>
-        </div>
-    </div>
-
-  </div>
-</div>
-
-    </main>
-    <!-- <footer class="page-footer no-margin __top">
-          <div class="container container-large">
-    <div class="row">
-      <div class="col l4 s12">
-        <h5 class="">Contact Us</h5>
-        <p>5th Floor, Life Sciences Building,<br />University of Western Cape,<br /> Modderdam Road, Bellville 7530, SA</p>
-        <ul>
-          
-          
-          
-          <li><a class="black-text" href="mailto:combattb@gmail.com"><i class="fa fa-send"></i>&nbsp;&nbsp;combattb@gmail.com</a></li>
-        </ul>
-      </div>
-      <div class="col l6 offset-l2 s12 right-align">
-        <h5 class=""><img src="/assets/img/logo.png" height="80px" /></h5>
-      </div>
-    </div>
-  </div>
-  <div class="footer-copyright">
-    <div class="container center-align">
-      Build with Jekyll and Materialize
-    </div>
-  </div>
-
-    </footer> -->
-    <script type="text/javascript" src="/assets/js/jquery.js"></script>
-    <script type="text/javascript" src="/assets/js/materialize.js"></script>
-    <script type="text/javascript" src="/assets/js/carousel.js"></script>
-    <script type="text/javascript" src="/assets/js/cards.js"></script>
-    <script type="text/javascript">
-    $(function() {
-      $(".dropdown-button").dropdown();
-  		$('.carousel.carousel-slider').carousel({fullWidth: true});
-      $(".button-collapse").sideNav();
-      $('nav a').addClass('waves-effect waves-light');
-      $('nav a').click(function(){
-			  $('.hidden').addClass('sub');
-		  });
-    });
-    </script>
 </body>
+
 </html>
