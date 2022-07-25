@@ -51,7 +51,12 @@
 	<body>
 
 		<!-- Header -->
-		<header>
+		<header id="workbench">
+			<!-- Background Image -->
+			<div class="bg-img" style="background-image: url('/img/ctbbackground.jpg');">
+				<div class="overlay"></div>
+			</div>
+			<!-- /Background Image -->
 
 			<!-- Nav -->
 			<nav id="nav" class="navbar">
@@ -101,7 +106,7 @@
 			<!-- /Nav -->
 
 			<!-- header wrapper -->
-			<div class="header-wrapper sm-padding bg-grey">
+			<!-- <div class="header-wrapper sm-padding bg-grey">
 				<div class="container">
 					<h2>Publications</h2>
 					<ul class="breadcrumb">
@@ -111,7 +116,7 @@
 						<li class="breadcrumb-item active">Publications</li>
 					</ul>
 				</div>
-			</div>
+			</div> -->
 			<!-- /header wrapper -->
 
 		</header>
@@ -119,6 +124,7 @@
 
 		<!-- Publications -->
 		<div id="blog" class="section md-padding">
+			<div class="overlay"></div>
 
 			<!-- Container -->
 			<div class="container">
@@ -127,110 +133,24 @@
 				<div class="row">
 
 					<!-- Main -->
-					<main id="main" class="col-md-12">
-						<table id="manuscripts" class="table table-striped table-bordered" style="width:100%">
-							<thead>
-								<tr>
-									<th>Title</th>
-									<th>Authors</th>
-									<th>Date</th>
-									<th>Journal</th>
-									<th>DOI</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>The COMBAT-TB Workbench: Making Powerful Mycobacterium tuberculosis Bioinformatics Accessible</td>
-									<td>van Heusden, P. et al. </td>
-									<td>Feb 2022</td>
-									<td>mSphere</td>
-									<td>
-										<a
-											href="https://doi.org/10.1128/msphere.00991-21">10.1128/msphere.00991-21</a>
-									</td>
-								</tr>
+					<main>
+						<h2>combatTB and combat-SARS-Cov-2 Workbench</h2>
+						
+						<p>The combatTB project has produced two Workbench platforms, for analysis of <em>M. tuberculosis</em> (Mtb)
+							and SARS-CoV-2 sequence data. The first of these, for analysis Mtb data, is described in this 
+							<a href="https://journals.asm.org/doi/10.1128/msphere.00991-21">publication</a> in mSphere. Code
+							for deploying the combatTB Workbench can be found
+							<a href="https://github.com/COMBAT-TB/irida-galaxy-deploy">here</a>.
+						</p>
 
-								<tr>
-									<td>COMBAT-TB-NeoDB: fostering tuberculosis research through integrative analysis
-										using graph database technologies</td>
-									<td>Lose. T, et al. </td>
-									<td>Aug 2019</td>
-									<td>Bioinformatics</td>
-									<td>
-										<a
-											href="https://doi.org/10.1093/bioinformatics/btz658">10.1093/bioinformatics/btz658</a>
-									</td>
-								</tr>
-								<tr>
-									<td>Prediction of human-bacillus protein-protein interactions using a multi-layer
-										neural network</td>
-									<td>Ahmed. I, et al. </td>
-									<td>Jun 2018</td>
-									<td>Bioinformatics</td>
-									<td>
-										<a
-											href="https://doi.org/10.1093/bioinformatics/bty504">10.1093/bioinformatics/bty504</a>
-									</td>
-								</tr>
-								<tr>
-									<td>Exploring the potential of T7 bacteriophage protein Gp2 as a novel inhibitor of
-										mycobacterial RNA
-										polymerase</td>
-									<td>du Plesis. J, et al.</td>
-									<td>Sept 2017</td>
-									<td>Tuberculosis (Edinb)</td>
-									<td>
-										<a
-											href="https://doi.org/10.1016/j.tube.2017.07.004">10.1016/j.tube.2017.07.004</a>
-									</td>
-								</tr>
-								<tr>
-									<td>Structural and functional effects of nucleotide variation on the human TB drug
-										metabolizing enzyme
-										arylamine N-acetyltransferase
-										1.
-									</td>
-									<td>Cloete. R, et al.</td>
-									<td>Aug 2017</td>
-									<td>J Mol Graph Model</td>
-									<td>
-										<a
-											href="https://doi.org/10.1016/j.jmgm.2017.04.026">10.1016/j.jmgm.2017.04.02</a>
-									</td>
-								</tr>
-								<tr>
-									<td>Resistance related metabolic pathways for drug target identification in
-										Mycobacterium tuberculosis</td>
-									<td>Cloete. R, et al.</td>
-									<td>Feb 2016</td>
-									<td>BMC Bioinformatics</td>
-									<td>
-										<a
-											href="https://dx.doi.org/10.1186%2Fs12859-016-0898-8">10.1186/s12859-016-0898-8</a>
-									</td>
-								</tr>
-								<tr>
-									<td>Molecular Evolution of Key Receptor Genes in Primates and Non-Human Primates
-									</td>
-									<td>Picone. B, et al.</td>
-									<td>Aug 2014</td>
-									<td>International Journal of Genetics and Genomics</td>
-									<td>
-										<a
-											href="https://dx.doi.org/10.11648/j.ijgg.20140204.12">10.11648/j.ijgg.20140204.12"</a>
-									</td>
-								</tr>
-							</tbody>
-							<tfoot>
-								<tr>
-									<th>Title</th>
-									<th>Authors</th>
-									<th>Date</th>
-									<th>Journal</th>
-									<th>DOI</th>
-								</tr>
-							</tfoot>
-						</table>
+						<p>The work on the combatTB Workbench led to the development of a similar Workbench for SARS-CoV-2.
+							The code for deploying the "combat-SARS-Cov-2 Workbench" can be found 
+							<a href="https://github.com/combat-sars-cov-2/workbench-deploy">here</a>. Funding from the
+							Africa CDC <a href="https://africacdc.org/institutes/ipg/">Institute for Pathogen Genomics (IPG)</a>
+							allowed us to deploy an instance of the Workbench at
+							<a href="https://workbench.sanbi.ac.za/login">workbench.sanbi.ac.za</a> for use by labs
+							supported by the IPG's Pathogen Genomics Initiative.
+						</p>
 					</main>
 					<!-- /Main -->
 
